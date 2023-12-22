@@ -4,6 +4,7 @@ import { HomeScreen } from '@screens/home';
 import { ThemeProvider } from 'styled-components/native';
 import theme from './src/theme';
 import { Loading } from '@components/Loading';
+import { StatisticsScreen } from '@screens/statistics';
 
 
 export default function App() {
@@ -18,7 +19,7 @@ export default function App() {
         translucent 
         backgroundColor="transparent" 
       />
-      {fontsLoaded ? <HomeScreen /> :  <Loading />}
+      {fontsLoaded ? <StatisticsScreen /> :  <Loading />}
     </ThemeProvider>
   );
 }
